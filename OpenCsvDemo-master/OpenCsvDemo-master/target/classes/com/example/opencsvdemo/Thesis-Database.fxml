@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="720.0" prefWidth="1024.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.opencsvdemo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="59.0" prefWidth="984.0">
+      <children>
+         <Label layoutX="26.0" layoutY="13.0" prefHeight="30.0" prefWidth="185.0" text="Search Thesis Title">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <TextField fx:id="filterField" layoutX="218.0" layoutY="15.0" prefHeight="25.0" prefWidth="314.0" />
+         <Button layoutX="661.0" layoutY="10.0" mnemonicParsing="false" onAction="#menuProgram" prefHeight="35.0" prefWidth="121.0" text="Logout">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button layoutX="848.0" layoutY="10.0" mnemonicParsing="false" onAction="#exitProgram" prefHeight="35.0" prefWidth="121.0" text="Exit">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+      </children>
+   </AnchorPane>
+   <Label alignment="CENTER" prefHeight="25.0" prefWidth="596.0" text="DECE Thesis Database">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <TableView fx:id="tableView" prefHeight="537.0" prefWidth="880.0">
+     <columns>
+       <TableColumn fx:id="titleColumn" prefWidth="200.0000057220459" text="Title" />
+       <TableColumn fx:id="groupColumn" prefWidth="45.33332824707031" text="Grp" />
+         <TableColumn fx:id="trmColumn" prefWidth="62.00006103515625" text="Trm" />
+         <TableColumn fx:id="syColumn" prefWidth="28.66668701171875" text="Sy" />
+         <TableColumn fx:id="noColumn" prefWidth="43.33331298828125" text="No" />
+         <TableColumn fx:id="membersColumn" prefWidth="110.0" text="Members" />
+         <TableColumn fx:id="adviserColumn" prefWidth="87.33334350585938" text="Adviser" />
+         <TableColumn fx:id="chairColumn" prefWidth="101.3333740234375" text="Panel_Chair" />
+         <TableColumn fx:id="panelist1Column" prefWidth="93.33331298828125" text="Panelist1" />
+         <TableColumn fx:id="panelist2Column" prefWidth="94.666748046875" text="Panelist2" />
+         <TableColumn fx:id="statusColumn" prefWidth="119.333251953125" text="Status" />
+     </columns>
+   </TableView>
+</VBox>
